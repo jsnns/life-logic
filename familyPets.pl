@@ -15,6 +15,10 @@ male(jacob).
 male(colby).
 female(alise).
 
+% brother sister
+brother(X, Y) :- male(X), sibling(X, Y).
+sister(X, Y) :- female(X), sibling(X, Y).
+
 % pets
 pet(david, oreo).
 pet(jacob, mango).
